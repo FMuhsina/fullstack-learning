@@ -1,0 +1,322 @@
+```css
+/* =========================================
+   GENERAL / BODY
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #0f172a;
+    color: #e2e8f0;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+#header {
+    background: #111827;
+
+    padding: 20px 60px;
+
+    border-bottom: 1px solid #334155;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Portfolio name */
+
+#name {
+    margin: 0;
+
+    font-size: 2em;
+    font-weight: bold;
+
+    color: #f8fafc;
+
+    border: none;
+}
+
+
+/* =========================================
+   NAVIGATION LINKS
+   ========================================= */
+
+#header a {
+    color: #cbd5e1;
+
+    text-decoration: none;
+
+    margin-left: 25px;
+
+    font-size: 1em;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+
+/* Hover effect */
+
+#header a:hover {
+    color: #60a5fa;
+}
+
+
+/* Active / important link */
+
+#header .active {
+    color: #60a5fa;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+   ========================================= */
+
+#content {
+    min-height: 600px;
+
+    padding: 100px 10%;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            #1e3a8a,
+            transparent 35%
+        ),
+        #0f172a;
+}
+
+
+/* Main heading */
+
+#content h1 {
+    font-size: 3.5em;
+
+    margin-bottom: 10px;
+
+    color: #f8fafc;
+}
+
+
+/* Highlighted name / text */
+
+.highlight {
+    color: #60a5fa;
+}
+
+
+/* Subtitle */
+
+#content h2 {
+    font-size: 1.7em;
+
+    color: #94a3b8;
+
+    margin-top: 0;
+}
+
+
+/* Paragraph */
+
+#content p {
+    max-width: 700px;
+
+    color: #cbd5e1;
+
+    font-size: 1.1em;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.button {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    margin-right: 12px;
+
+    border-radius: 7px;
+
+    background: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+/* Button hover */
+
+.button:hover {
+    background: #3b82f6;
+
+    transform: translateY(-2px);
+}
+
+
+/* Secondary button */
+
+.button-outline {
+    display: inline-block;
+
+    padding: 11px 24px;
+
+    border: 1px solid #60a5fa;
+
+    border-radius: 7px;
+
+    color: #60a5fa;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.button-outline:hover {
+    background: #2563eb;
+
+    color: white;
+}
+
+
+/* =========================================
+   NORMAL LINKS
+   ========================================= */
+
+a {
+    color: #60a5fa;
+
+    transition: 0.3s;
+}
+
+
+a:hover {
+    color: #93c5fd;
+}
+
+
+/* =========================================
+   CARDS
+   ========================================= */
+
+.card {
+    background: #1e293b;
+
+    padding: 25px;
+
+    margin: 20px 0;
+
+    border: 1px solid #334155;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+
+.card:hover {
+    border-color: #3b82f6;
+
+    transform: translateY(-3px);
+}
+
+
+.card h3 {
+    color: #f8fafc;
+}
+
+
+.card p {
+    color: #94a3b8;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+#footer {
+    background: #020617;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-top: 1px solid #334155;
+
+    color: #94a3b8;
+}
+
+
+/* Footer links */
+
+#footer a {
+    color: #60a5fa;
+
+    text-decoration: none;
+
+    margin: 0 10px;
+}
+
+
+#footer a:hover {
+    color: #93c5fd;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    #header {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 20px;
+    }
+
+    #header nav {
+        margin-top: 15px;
+    }
+
+    #header a {
+        margin: 0 8px;
+    }
+
+    #content {
+        padding: 70px 25px;
+    }
+
+    #content h1 {
+        font-size: 2.5em;
+    }
+}
+```
